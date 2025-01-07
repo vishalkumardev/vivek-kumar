@@ -1,0 +1,3044 @@
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI-generated website" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Performance optimization: Preload critical resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+      as="style"
+    />
+
+    <!-- Core CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f8f8f8",
+                100: "#e8e8e8",
+                200: "#d3d3d3",
+                300: "#a3a3a3",
+                400: "#737373",
+                500: "#525252",
+                600: "#404040",
+                700: "#262626",
+                800: "#171717",
+                900: "#0a0a0a",
+                950: "#030303",
+              },
+              secondary: {
+                50: "#f8f8f8",
+                100: "#e8e8e8",
+                200: "#d3d3d3",
+                300: "#a3a3a3",
+                400: "#737373",
+                500: "#525252",
+                600: "#404040",
+                700: "#262626",
+                800: "#171717",
+                900: "#0a0a0a",
+                950: "#030303",
+              },
+              accent: {
+                50: "#f8f8f8",
+                100: "#e8e8e8",
+                200: "#d3d3d3",
+                300: "#a3a3a3",
+                400: "#737373",
+                500: "#525252",
+                600: "#404040",
+                700: "#262626",
+                800: "#171717",
+                900: "#0a0a0a",
+                950: "#030303",
+              },
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "sans-serif",
+              ],
+              heading: ["Montserrat", "Inter", "system-ui", "sans-serif"],
+            },
+            spacing: {
+              18: "4.5rem",
+              22: "5.5rem",
+              30: "7.5rem",
+            },
+            maxWidth: {
+              "8xl": "88rem",
+              "9xl": "96rem",
+            },
+            animation: {
+              "fade-in": "fadeIn 0.5s ease-in",
+              "fade-out": "fadeOut 0.5s ease-out",
+              "slide-up": "slideUp 0.5s ease-out",
+              "slide-down": "slideDown 0.5s ease-out",
+              "slide-left": "slideLeft 0.5s ease-out",
+              "slide-right": "slideRight 0.5s ease-out",
+              "scale-in": "scaleIn 0.5s ease-out",
+              "scale-out": "scaleOut 0.5s ease-out",
+              "spin-slow": "spin 3s linear infinite",
+              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              "bounce-slow": "bounce 3s infinite",
+              float: "float 3s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              fadeOut: {
+                "0%": { opacity: "1" },
+                "100%": { opacity: "0" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(20px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              slideDown: {
+                "0%": { transform: "translateY(-20px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              slideLeft: {
+                "0%": { transform: "translateX(20px)", opacity: "0" },
+                "100%": { transform: "translateX(0)", opacity: "1" },
+              },
+              slideRight: {
+                "0%": { transform: "translateX(-20px)", opacity: "0" },
+                "100%": { transform: "translateX(0)", opacity: "1" },
+              },
+              scaleIn: {
+                "0%": { transform: "scale(0.9)", opacity: "0" },
+                "100%": { transform: "scale(1)", opacity: "1" },
+              },
+              scaleOut: {
+                "0%": { transform: "scale(1.1)", opacity: "0" },
+                "100%": { transform: "scale(1)", opacity: "1" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+            aspectRatio: {
+              portrait: "3/4",
+              landscape: "4/3",
+              ultrawide: "21/9",
+            },
+          },
+        },
+        variants: {
+          extend: {
+            opacity: ["disabled"],
+            cursor: ["disabled"],
+            backgroundColor: ["active", "disabled"],
+            textColor: ["active", "disabled"],
+          },
+        },
+      };
+    </script>
+
+    <!-- Utilities and Components -->
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"
+    ></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"
+    ></script>
+
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base Styles -->
+    <style>
+      * {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+
+      /* Webkit browsers like Chrome, Safari, newer Edge */
+      *::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #666;
+      }
+
+      /* Remove tap highlight on mobile */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      /* Improve text rendering */
+      body {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Focus outline styles */
+      :focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+
+      /* Print styles */
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+
+        a[href]:after {
+          content: " (" attr(href) ")";
+        }
+      }
+    </style>
+
+    <!-- Enhanced Image Handler -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const imageObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove("opacity-0");
+                    img.classList.add("opacity-100");
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute("data-src");
+                  observer.unobserve(img);
+                }
+              }
+            });
+          },
+          {
+            rootMargin: "50px 0px",
+            threshold: 0.01,
+          }
+        );
+
+        const loadImage = (img) => {
+          if ("loading" in HTMLImageElement.prototype) {
+            img.loading = "lazy";
+          }
+
+          img.classList.add("transition-opacity", "duration-300", "opacity-0");
+
+          img.onerror = () => {
+            const width = img.getAttribute("width") || img.clientWidth || 300;
+            const height =
+              img.getAttribute("height") || img.clientHeight || 200;
+            img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+            img.alt = "Image unavailable";
+            img.classList.remove("opacity-0");
+            img.classList.add("opacity-100", "error-image");
+          };
+
+          if (img.dataset.src) {
+            imageObserver.observe(img);
+          } else {
+            img.classList.remove("opacity-0");
+            img.classList.add("opacity-100");
+          }
+        };
+
+        document
+          .querySelectorAll("img[data-src], img:not([data-src])")
+          .forEach(loadImage);
+
+        // Watch for dynamically added images
+        new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+              if (node.nodeType === 1) {
+                if (node.tagName === "IMG") {
+                  loadImage(node);
+                }
+                node.querySelectorAll("img").forEach(loadImage);
+              }
+            });
+          });
+        }).observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      });
+
+      // Performance monitoring
+      if ("performance" in window && "PerformanceObserver" in window) {
+        // Create performance observer
+        const observer = new PerformanceObserver((list) => {
+          const entries = list.getEntries();
+          entries.forEach((entry) => {
+            if (entry.entryType === "largest-contentful-paint") {
+              // console.log(`LCP: ${entry.startTime}ms`);
+            }
+            if (entry.entryType === "first-input") {
+              // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+            }
+            if (entry.entryType === "layout-shift") {
+              // console.log(`CLS: ${entry.value}`);
+            }
+          });
+        });
+
+        // Observe performance metrics
+        observer.observe({
+          entryTypes: [
+            "largest-contentful-paint",
+            "first-input",
+            "layout-shift",
+          ],
+        });
+
+        // Log basic performance metrics
+        window.addEventListener("load", () => {
+          const timing = performance.getEntriesByType("navigation")[0];
+          console.log({
+            "DNS Lookup": timing.domainLookupEnd - timing.domainLookupStart,
+            "TCP Connection": timing.connectEnd - timing.connectStart,
+            "DOM Content Loaded":
+              timing.domContentLoadedEventEnd - timing.navigationStart,
+            "Page Load": timing.loadEventEnd - timing.navigationStart,
+          });
+        });
+      }
+
+      // Handle offline/online status
+      window.addEventListener("online", () => {
+        document.body.classList.remove("offline");
+        console.log("Connection restored");
+      });
+
+      window.addEventListener("offline", () => {
+        document.body.classList.add("offline");
+        console.log("Connection lost");
+      });
+    </script>
+    <style>
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      } /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      ::after,
+      ::before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .-bottom-4 {
+        bottom: -1rem;
+      }
+      .-left-4 {
+        left: -1rem;
+      }
+      .-right-4 {
+        right: -1rem;
+      }
+      .-top-4 {
+        top: -1rem;
+      }
+      .bottom-0 {
+        bottom: 0px;
+      }
+      .bottom-10 {
+        bottom: 2.5rem;
+      }
+      .left-0 {
+        left: 0px;
+      }
+      .left-1\/2 {
+        left: 50%;
+      }
+      .right-0 {
+        right: 0px;
+      }
+      .top-1\/2 {
+        top: 50%;
+      }
+      .right-4 {
+        right: 1rem;
+      }
+      .top-4 {
+        top: 1rem;
+      }
+      .bottom-8 {
+        bottom: 2rem;
+      }
+      .right-8 {
+        right: 2rem;
+      }
+      .z-50 {
+        z-index: 50;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ml-10 {
+        margin-left: 2.5rem;
+      }
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+      .mt-12 {
+        margin-top: 3rem;
+      }
+      .mt-4 {
+        margin-top: 1rem;
+      }
+      .mt-8 {
+        margin-top: 2rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .ml-4 {
+        margin-left: 1rem;
+      }
+      .ml-2 {
+        margin-left: 0.5rem;
+      }
+      .mt-16 {
+        margin-top: 4rem;
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .flex {
+        display: flex;
+      }
+      .inline-flex {
+        display: inline-flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .hidden {
+        display: none;
+      }
+      .aspect-video {
+        aspect-ratio: 16 / 9;
+      }
+      .h-16 {
+        height: 4rem;
+      }
+      .h-6 {
+        height: 1.5rem;
+      }
+      .h-1 {
+        height: 0.25rem;
+      }
+      .h-24 {
+        height: 6rem;
+      }
+      .h-96 {
+        height: 24rem;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .h-12 {
+        height: 3rem;
+      }
+      .h-10 {
+        height: 2.5rem;
+      }
+      .h-8 {
+        height: 2rem;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .min-h-\[70vh\] {
+        min-height: 70vh;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .w-24 {
+        width: 6rem;
+      }
+      .w-1 {
+        width: 0.25rem;
+      }
+      .w-12 {
+        width: 3rem;
+      }
+      .w-16 {
+        width: 4rem;
+      }
+      .w-10 {
+        width: 2.5rem;
+      }
+      .w-8 {
+        width: 2rem;
+      }
+      .max-w-7xl {
+        max-width: 80rem;
+      }
+      .flex-1 {
+        flex: 1 1 0%;
+      }
+      .-translate-x-1\/2 {
+        --tw-translate-x: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .-translate-y-1\/2 {
+        --tw-translate-y: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+      .animate-bounce {
+        animation: bounce 1s infinite;
+      }
+      @keyframes pulse {
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .items-baseline {
+        align-items: baseline;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-12 {
+        gap: 3rem;
+      }
+      .gap-2 {
+        gap: 0.5rem;
+      }
+      .gap-3 {
+        gap: 0.75rem;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+      .gap-8 {
+        gap: 2rem;
+      }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1rem * var(--tw-space-x-reverse));
+        margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-y-1 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+      }
+      .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+      }
+      .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      }
+      .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+      }
+      .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      }
+      .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .border-t {
+        border-top-width: 1px;
+      }
+      .border-purple-500 {
+        --tw-border-opacity: 1;
+        border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+      }
+      .border-gray-300 {
+        --tw-border-opacity: 1;
+        border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+      }
+      .border-neutral-800 {
+        --tw-border-opacity: 1;
+        border-color: rgb(38 38 38 / var(--tw-border-opacity, 1));
+      }
+      .bg-neutral-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+      }
+      .bg-blue-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+      }
+      .bg-neutral-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+      }
+      .bg-neutral-200 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+      }
+      .bg-neutral-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
+      }
+      .bg-purple-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+      }
+      .bg-yellow-400 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+      }
+      .bg-opacity-95 {
+        --tw-bg-opacity: 0.95;
+      }
+      .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      .from-purple-500\/20 {
+        --tw-gradient-from: rgb(168 85 247 / 0.2)
+          var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .to-blue-500\/20 {
+        --tw-gradient-to: rgb(59 130 246 / 0.2) var(--tw-gradient-to-position);
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .px-3 {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      .py-20 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .pb-3 {
+        padding-bottom: 0.75rem;
+      }
+      .pt-2 {
+        padding-top: 0.5rem;
+      }
+      .pt-16 {
+        padding-top: 4rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-800 {
+        --tw-text-opacity: 1;
+        color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .text-neutral-600 {
+        --tw-text-opacity: 1;
+        color: rgb(82 82 82 / var(--tw-text-opacity, 1));
+      }
+      .text-neutral-700 {
+        --tw-text-opacity: 1;
+        color: rgb(64 64 64 / var(--tw-text-opacity, 1));
+      }
+      .text-neutral-900 {
+        --tw-text-opacity: 1;
+        color: rgb(23 23 23 / var(--tw-text-opacity, 1));
+      }
+      .text-purple-500 {
+        --tw-text-opacity: 1;
+        color: rgb(168 85 247 / var(--tw-text-opacity, 1));
+      }
+      .text-purple-600 {
+        --tw-text-opacity: 1;
+        color: rgb(147 51 234 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-600 {
+        --tw-text-opacity: 1;
+        color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+      }
+      .text-yellow-400 {
+        --tw-text-opacity: 1;
+        color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-200 {
+        --tw-text-opacity: 1;
+        color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+      }
+      .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+      }
+      .antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .opacity-70 {
+        opacity: 0.7;
+      }
+      .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .backdrop-blur-sm {
+        --tw-backdrop-blur: blur(4px);
+        -webkit-backdrop-filter: var(--tw-backdrop-blur)
+          var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
+          var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
+          var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+          var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+          var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+          var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+          var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+          var(--tw-backdrop-sepia);
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color, fill, stroke,
+          -webkit-text-decoration-color;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .transition-transform {
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+      .hover\:-translate-y-2:hover {
+        --tw-translate-y: -0.5rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .hover\:transform:hover {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .hover\:bg-purple-500:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:bg-purple-500\/10:hover {
+        background-color: rgb(168 85 247 / 0.1);
+      }
+      .hover\:bg-purple-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:bg-purple-700:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:bg-gray-100:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+      }
+      .hover\:text-purple-500:hover {
+        --tw-text-opacity: 1;
+        color: rgb(168 85 247 / var(--tw-text-opacity, 1));
+      }
+      .hover\:text-white:hover {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .hover\:text-purple-400:hover {
+        --tw-text-opacity: 1;
+        color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+      }
+      .hover\:text-purple-600:hover {
+        --tw-text-opacity: 1;
+        color: rgb(147 51 234 / var(--tw-text-opacity, 1));
+      }
+      .focus\:not-sr-only:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+      }
+      .focus\:absolute:focus {
+        position: absolute;
+      }
+      .focus\:left-0:focus {
+        left: 0px;
+      }
+      .focus\:top-0:focus {
+        top: 0px;
+      }
+      .focus\:z-50:focus {
+        z-index: 50;
+      }
+      .focus\:border-purple-500:focus {
+        --tw-border-opacity: 1;
+        border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+      }
+      .focus\:bg-white:focus {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+      }
+      .focus\:p-4:focus {
+        padding: 1rem;
+      }
+      .focus\:text-black:focus {
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+      }
+      .focus\:outline-none:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+      .focus\:ring-2:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+      }
+      .focus\:ring-purple-200:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(233 213 255 / var(--tw-ring-opacity, 1));
+      }
+      @media (min-width: 640px) {
+        .sm\:px-6 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .md\:mt-0 {
+          margin-top: 0px;
+        }
+        .md\:mb-0 {
+          margin-bottom: 0px;
+        }
+        .md\:block {
+          display: block;
+        }
+        .md\:hidden {
+          display: none;
+        }
+        .md\:w-1\/2 {
+          width: 50%;
+        }
+        .md\:w-5\/12 {
+          width: 41.666667%;
+        }
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .md\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .md\:grid-cols-4 {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        .md\:flex-row {
+          flex-direction: row;
+        }
+        .md\:justify-between {
+          justify-content: space-between;
+        }
+        .md\:text-right {
+          text-align: right;
+        }
+        .md\:text-6xl {
+          font-size: 3.75rem;
+          line-height: 1;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .lg\:px-8 {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark\:bg-gray-900 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased text-gray-800 min-h-screen flex flex-col"
+    cz-shortcut-listen="true"
+    data-new-gr-c-s-check-loaded="14.1215.0"
+    data-gr-ext-installed=""
+  >
+    <!-- Skip to main content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black"
+    >
+      Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="relative z-50 bg-white dark:bg-gray-900">
+      <!-- Header content goes here -->
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content" class="flex-1 relative">
+      <!-- Content will be injected here -->
+    </main>
+
+    <htmlcode>
+      <div id="root">
+        <nav
+          id="navbar"
+          class="fixed w-full z-50 bg-neutral-900 text-white bg-opacity-95 backdrop-blur-sm"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center">
+                <span
+                  class="text-2xl font-bold animate__animated animate__fadeIn"
+                  >VK</span
+                >
+              </div>
+
+              <!-- Desktop Menu -->
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a
+                    href="#hero"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Home</a
+                  >
+                  <a
+                    href="#about"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >About</a
+                  >
+                  <a
+                    href="#services"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Services</a
+                  >
+                  <a
+                    href="#portfolio"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="#workflow"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Workflow</a
+                  >
+                  <a
+                    href="#testimonials"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Testimonials</a
+                  >
+                  <a
+                    href="#pricing"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Pricing</a
+                  >
+                  <a
+                    href="#contact"
+                    class="hover:text-purple-500 px-3 py-2 transition-colors duration-300"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+
+              <!-- Mobile menu button -->
+              <div class="md:hidden">
+                <button
+                  id="mobile-menu-button"
+                  class="text-gray-300 hover:text-white focus:outline-none"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+              <a
+                href="#hero"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Services</a
+              >
+              <a
+                href="#portfolio"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Portfolio</a
+              >
+              <a
+                href="#workflow"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Workflow</a
+              >
+              <a
+                href="#testimonials"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Testimonials</a
+              >
+              <a
+                href="#pricing"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Pricing</a
+              >
+              <a
+                href="#contact"
+                class="block px-3 py-2 hover:text-purple-500 transition-colors duration-300"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <script>
+          const mobileMenuButton =
+            document.getElementById("mobile-menu-button");
+          const mobileMenu = document.getElementById("mobile-menu");
+
+          mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+          });
+
+          // Close mobile menu when clicking a link
+          const mobileLinks = mobileMenu.getElementsByTagName("a");
+          for (let link of mobileLinks) {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+            });
+          }
+
+          // Add smooth scrolling to all links
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+              });
+            });
+          });
+
+          // Change navbar background on scroll
+          window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+              navbar.classList.add("bg-opacity-95", "backdrop-blur-sm");
+            } else {
+              navbar.classList.remove("bg-opacity-95", "backdrop-blur-sm");
+            }
+          });
+        </script>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="hero" class="min-h-[70vh] bg-neutral-900 text-white pt-16">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between h-full py-20"
+            >
+              <div
+                class="md:w-1/2 space-y-6 animate__animated animate__fadeInLeft"
+              >
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                  Video Editor &amp;
+                  <span class="text-purple-500">Content Creator</span>
+                </h1>
+                <p class="text-xl text-gray-300">
+                  Transforming raw footage into compelling stories. Based in
+                  Bhopal, Madhya Pradesh.
+                </p>
+                <div class="flex gap-4">
+                  <a
+                    href="#portfolio"
+                    class="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full transition-colors duration-300 font-semibold"
+                  >
+                    View My Work
+                  </a>
+                  <a
+                    href="#contact"
+                    class="px-8 py-3 border border-purple-500 hover:bg-purple-500/10 rounded-full transition-colors duration-300 font-semibold"
+                  >
+                    Let's Connect
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="md:w-1/2 mt-12 md:mt-0 animate__animated animate__fadeInRight"
+              >
+                <div class="relative">
+                  <div
+                    class="w-full h-96 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg flex items-center justify-center"
+                  >
+                    <div class="text-6xl">
+                      <i class="fas fa-play-circle animate-pulse"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">10+</span>
+                  </div>
+                  <div
+                    class="absolute -top-4 -left-4 w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">4K</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block"
+            >
+              <a href="#about" class="text-white">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="absolute bottom-0 left-0 right-0 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#1a1a1a"
+                fill-opacity="1"
+                d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,128C672,128,768,160,864,160C960,160,1056,128,1152,112C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="about" class="py-20 bg-neutral-100">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900">About Me</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div class="space-y-6 animate__animated animate__fadeInLeft">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h3 class="text-2xl font-semibold text-neutral-900 mb-4">
+                    Vivek Kumar
+                  </h3>
+                  <p class="text-neutral-700 leading-relaxed">
+                    Professional video editor based in Bhopal, Madhya Pradesh,
+                    with a passion for storytelling through visual media.
+                    Specializing in creative content editing, motion graphics,
+                    and post-production excellence.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold text-purple-500 mb-2">
+                      Experience
+                    </h4>
+                    <p class="text-3xl font-bold text-neutral-900">5+ Years</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold text-purple-500 mb-2">Projects</h4>
+                    <p class="text-3xl font-bold text-neutral-900">200+</p>
+                  </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-xl font-semibold text-neutral-900 mb-4">
+                    Skills
+                  </h4>
+                  <div class="flex flex-wrap gap-3">
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >Adobe Premiere Pro</span
+                    >
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >After Effects</span
+                    >
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >DaVinci Resolve</span
+                    >
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >Motion Graphics</span
+                    >
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >Color Grading</span
+                    >
+                    <span
+                      class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full"
+                      >Sound Design</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="animate__animated animate__fadeInRight">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="space-y-4">
+                    <div class="bg-purple-500 p-6 rounded-lg text-white">
+                      <h4 class="font-semibold mb-2">Video Production</h4>
+                      <p class="text-sm">
+                        Expert in full video production workflow
+                      </p>
+                    </div>
+                    <div class="bg-neutral-900 p-6 rounded-lg text-white">
+                      <h4 class="font-semibold mb-2">Visual Effects</h4>
+                      <p class="text-sm">Creative VFX solutions</p>
+                    </div>
+                  </div>
+                  <div class="space-y-4 mt-8">
+                    <div class="bg-neutral-900 p-6 rounded-lg text-white">
+                      <h4 class="font-semibold mb-2">Story Telling</h4>
+                      <p class="text-sm">Crafting compelling narratives</p>
+                    </div>
+                    <div class="bg-purple-500 p-6 rounded-lg text-white">
+                      <h4 class="font-semibold mb-2">Content Creation</h4>
+                      <p class="text-sm">Engaging digital content</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="services" class="py-20 bg-neutral-900 text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold">My Services</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Service 1 -->
+              <div
+                class="bg-neutral-800 rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp"
+              >
+                <div class="text-purple-500 text-4xl mb-4">
+                  <i class="fas fa-video"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Video Editing</h3>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Professional cuts and transitions
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Color correction &amp; grading
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Sound mixing &amp; enhancement
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Service 2 -->
+              <div
+                class="bg-neutral-800 rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp"
+                style="animation-delay: 0.2s"
+              >
+                <div class="text-purple-500 text-4xl mb-4">
+                  <i class="fas fa-film"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Motion Graphics</h3>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    2D &amp; 3D animations
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Logo animations
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Title sequences
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Service 3 -->
+              <div
+                class="bg-neutral-800 rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp"
+                style="animation-delay: 0.4s"
+              >
+                <div class="text-purple-500 text-4xl mb-4">
+                  <i class="fas fa-magic"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Visual Effects</h3>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Special effects
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Green screen compositing
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-purple-500 mr-2"></i>
+                    Visual enhancements
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              <div
+                class="bg-neutral-800 rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp"
+                style="animation-delay: 0.6s"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-2xl font-bold mb-2">Commercial Editing</h3>
+                    <p class="text-gray-300">
+                      Professional editing for advertisements and promotional
+                      content
+                    </p>
+                  </div>
+                  <div class="text-purple-500 text-4xl">
+                    <i class="fas fa-ad"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-neutral-800 rounded-xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp"
+                style="animation-delay: 0.8s"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-2xl font-bold mb-2">
+                      Social Media Content
+                    </h3>
+                    <p class="text-gray-300">
+                      Engaging content optimized for various social platforms
+                    </p>
+                  </div>
+                  <div class="text-purple-500 text-4xl">
+                    <i class="fas fa-share-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-12">
+              <a
+                href="#contact"
+                class="inline-block px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-full transition-colors duration-300 font-semibold animate__animated animate__pulse animate__infinite"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="portfolio" class="py-20 bg-neutral-100">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900">My Portfolio</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div
+              class="flex flex-wrap justify-center gap-4 mb-12 animate__animated animate__fadeIn"
+            >
+              <button
+                class="filter-btn active px-6 py-2 rounded-full bg-purple-500 text-white hover:bg-purple-600 transition-colors duration-300"
+                data-filter="all"
+              >
+                All
+              </button>
+              <button
+                class="filter-btn px-6 py-2 rounded-full bg-neutral-200 hover:bg-purple-500 hover:text-white transition-colors duration-300"
+                data-filter="commercial"
+              >
+                Commercial
+              </button>
+              <button
+                class="filter-btn px-6 py-2 rounded-full bg-neutral-200 hover:bg-purple-500 hover:text-white transition-colors duration-300"
+                data-filter="music"
+              >
+                Music Videos
+              </button>
+              <button
+                class="filter-btn px-6 py-2 rounded-full bg-neutral-200 hover:bg-purple-500 hover:text-white transition-colors duration-300"
+                data-filter="social"
+              >
+                Social Media
+              </button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 portfolio-items"
+            >
+              <!-- Portfolio Item 1 -->
+              <div
+                class="portfolio-item commercial animate__animated animate__fadeInUp"
+              >
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div
+                    class="relative aspect-video bg-neutral-800 flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-play-circle text-6xl text-white opacity-70"
+                    ></i>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Commercial Project</h3>
+                    <p class="text-neutral-600 mb-4">
+                      Brand Advertisement Campaign
+                    </p>
+                    <div class="flex gap-2">
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Editing</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Color Grading</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 2 -->
+              <div
+                class="portfolio-item music animate__animated animate__fadeInUp"
+                style="animation-delay: 0.2s"
+              >
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div
+                    class="relative aspect-video bg-neutral-800 flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-play-circle text-6xl text-white opacity-70"
+                    ></i>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Music Video</h3>
+                    <p class="text-neutral-600 mb-4">Artist Performance Edit</p>
+                    <div class="flex gap-2">
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Effects</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Transitions</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item 3 -->
+              <div
+                class="portfolio-item social animate__animated animate__fadeInUp"
+                style="animation-delay: 0.4s"
+              >
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                  <div
+                    class="relative aspect-video bg-neutral-800 flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-play-circle text-6xl text-white opacity-70"
+                    ></i>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Social Media Content</h3>
+                    <p class="text-neutral-600 mb-4">
+                      Instagram Reels Campaign
+                    </p>
+                    <div class="flex gap-2">
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Motion</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
+                        >Graphics</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+              <button
+                class="px-8 py-4 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition-colors duration-300 animate__animated animate__pulse animate__infinite"
+              >
+                Load More Projects
+              </button>
+            </div>
+          </div>
+
+          <script>
+            // Portfolio Filtering
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+            filterButtons.forEach((btn) => {
+              btn.addEventListener("click", () => {
+                // Remove active class from all buttons
+                filterButtons.forEach((button) =>
+                  button.classList.remove(
+                    "active",
+                    "bg-purple-500",
+                    "text-white"
+                  )
+                );
+                // Add active class to clicked button
+                btn.classList.add("active", "bg-purple-500", "text-white");
+
+                const filterValue = btn.getAttribute("data-filter");
+
+                portfolioItems.forEach((item) => {
+                  if (
+                    filterValue === "all" ||
+                    item.classList.contains(filterValue)
+                  ) {
+                    item.style.display = "block";
+                    item.classList.add("animate__fadeInUp");
+                  } else {
+                    item.style.display = "none";
+                  }
+                });
+              });
+            });
+          </script>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="workflow" class="py-20 bg-neutral-900 text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold">My Workflow</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="relative">
+              <!-- Timeline Line -->
+              <div
+                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-500"
+              ></div>
+
+              <!-- Timeline Items -->
+              <div class="space-y-12">
+                <!-- Step 1 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInLeft"
+                >
+                  <div class="md:w-5/12 mb-8 md:mb-0 md:text-right">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        01. Project Discussion
+                      </h3>
+                      <p class="text-gray-300">
+                        Initial consultation to understand your vision,
+                        requirements, and project goals. We'll discuss timeline,
+                        style, and deliverables.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-comments text-white"></i>
+                  </div>
+                  <div class="md:w-5/12"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInRight"
+                >
+                  <div class="md:w-5/12"></div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-tasks text-white"></i>
+                  </div>
+                  <div class="md:w-5/12 mb-8 md:mb-0">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        02. Planning &amp; Organization
+                      </h3>
+                      <p class="text-gray-300">
+                        Organizing footage, creating project timeline, and
+                        establishing editing framework based on requirements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInLeft"
+                >
+                  <div class="md:w-5/12 mb-8 md:mb-0 md:text-right">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        03. Initial Edit
+                      </h3>
+                      <p class="text-gray-300">
+                        Creating rough cut, implementing basic transitions, and
+                        establishing narrative flow of the content.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-cut text-white"></i>
+                  </div>
+                  <div class="md:w-5/12"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInRight"
+                >
+                  <div class="md:w-5/12"></div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-magic text-white"></i>
+                  </div>
+                  <div class="md:w-5/12 mb-8 md:mb-0">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        04. Enhancement
+                      </h3>
+                      <p class="text-gray-300">
+                        Adding effects, color grading, sound design, and motion
+                        graphics to enhance the visual appeal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInLeft"
+                >
+                  <div class="md:w-5/12 mb-8 md:mb-0 md:text-right">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        05. Review &amp; Revisions
+                      </h3>
+                      <p class="text-gray-300">
+                        Client feedback integration and making necessary
+                        adjustments to perfect the final product.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-sync text-white"></i>
+                  </div>
+                  <div class="md:w-5/12"></div>
+                </div>
+
+                <!-- Step 6 -->
+                <div
+                  class="relative flex md:justify-between items-center flex-col md:flex-row animate__animated animate__fadeInRight"
+                >
+                  <div class="md:w-5/12"></div>
+                  <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center"
+                  >
+                    <i class="fas fa-check-circle text-white"></i>
+                  </div>
+                  <div class="md:w-5/12">
+                    <div
+                      class="bg-neutral-800 p-6 rounded-lg shadow-lg inline-block"
+                    >
+                      <h3 class="text-xl font-bold text-purple-500 mb-2">
+                        06. Final Delivery
+                      </h3>
+                      <p class="text-gray-300">
+                        Exporting in required formats and delivering the final
+                        product with all necessary files.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="testimonials" class="py-20 bg-neutral-100">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900">
+                Client Testimonials
+              </h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="testimonial-slider relative">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Testimonial 1 -->
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                      <div class="flex items-center mb-6">
+                        <div
+                          class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center"
+                        >
+                          <span class="text-2xl text-purple-500">A</span>
+                        </div>
+                        <div class="ml-4">
+                          <h4 class="font-bold text-lg">Aditya Sharma</h4>
+                          <p class="text-gray-600">Marketing Director</p>
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="text-gray-700">
+                        "Vivek's editing skills transformed our commercial into
+                        something extraordinary. His attention to detail and
+                        creative vision exceeded our expectations."
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Testimonial 2 -->
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                      <div class="flex items-center mb-6">
+                        <div
+                          class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center"
+                        >
+                          <span class="text-2xl text-purple-500">R</span>
+                        </div>
+                        <div class="ml-4">
+                          <h4 class="font-bold text-lg">Riya Patel</h4>
+                          <p class="text-gray-600">Content Creator</p>
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="text-gray-700">
+                        "Working with Vivek was a game-changer for my YouTube
+                        channel. His editing style added a professional touch
+                        that helped grow my audience significantly."
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Testimonial 3 -->
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                      <div class="flex items-center mb-6">
+                        <div
+                          class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center"
+                        >
+                          <span class="text-2xl text-purple-500">S</span>
+                        </div>
+                        <div class="ml-4">
+                          <h4 class="font-bold text-lg">Sandeep Kumar</h4>
+                          <p class="text-gray-600">Business Owner</p>
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                      <p class="text-gray-700">
+                        "Exceptional work on our product videos. Vivek's
+                        professional approach and quick turnaround time made the
+                        whole process smooth and efficient."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <button
+                class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none hover:bg-purple-600 transition-colors duration-300 swiper-button-prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none hover:bg-purple-600 transition-colors duration-300 swiper-button-next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <script>
+            new Swiper(".testimonial-slider .swiper-container", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              autoplay: {
+                delay: 5000,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              },
+            });
+          </script>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="pricing" class="py-20 bg-neutral-900 text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold">Pricing Plans</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Basic Plan -->
+              <div
+                class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp"
+              >
+                <div class="p-8">
+                  <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                  <div class="text-purple-500 text-4xl font-bold mb-6">
+                    ₹15,000<span class="text-sm text-gray-400">/project</span>
+                  </div>
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Basic Video Editing
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Color Correction
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      2 Revisions
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      3-5 Minutes Final Video
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="block text-center py-3 px-6 bg-purple-500 hover:bg-purple-600 rounded-full transition-colors duration-300"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+
+              <!-- Pro Plan -->
+              <div
+                class="bg-purple-600 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s relative"
+              >
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="bg-yellow-400 text-neutral-900 px-3 py-1 rounded-full text-sm font-semibold"
+                    >Popular</span
+                  >
+                </div>
+                <div class="p-8">
+                  <h3 class="text-2xl font-bold mb-4">Professional</h3>
+                  <div class="text-white text-4xl font-bold mb-6">
+                    ₹30,000<span class="text-sm text-gray-200">/project</span>
+                  </div>
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                      <i class="fas fa-check mr-2"></i>
+                      Advanced Video Editing
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check mr-2"></i>
+                      Color Grading
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check mr-2"></i>
+                      Motion Graphics
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check mr-2"></i>
+                      5 Revisions
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check mr-2"></i>
+                      5-10 Minutes Final Video
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="block text-center py-3 px-6 bg-white text-purple-600 hover:bg-gray-100 rounded-full transition-colors duration-300"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+
+              <!-- Premium Plan -->
+              <div
+                class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                <div class="p-8">
+                  <h3 class="text-2xl font-bold mb-4">Premium</h3>
+                  <div class="text-purple-500 text-4xl font-bold mb-6">
+                    ₹50,000<span class="text-sm text-gray-400">/project</span>
+                  </div>
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Premium Video Editing
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Advanced Color Grading
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Custom Motion Graphics
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Sound Design
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      Unlimited Revisions
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-check text-purple-500 mr-2"></i>
+                      10+ Minutes Final Video
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="block text-center py-3 px-6 bg-purple-500 hover:bg-purple-600 rounded-full transition-colors duration-300"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 text-center">
+              <p class="text-gray-400 mb-4">Need a custom package?</p>
+              <a
+                href="#contact"
+                class="inline-flex items-center text-purple-500 hover:text-purple-400 transition-colors duration-300"
+              >
+                <span>Let's discuss your project</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <section id="contact" class="py-20 bg-neutral-100">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900">Get In Touch</h2>
+              <div class="w-24 h-1 bg-purple-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <!-- Contact Information -->
+              <div class="space-y-8 animate__animated animate__fadeInLeft">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h3 class="text-2xl font-bold text-neutral-900 mb-4">
+                    Let's Connect
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    Ready to bring your vision to life? Let's discuss your
+                    project and create something amazing together.
+                  </p>
+
+                  <div class="space-y-4">
+                    <div class="flex items-center">
+                      <div
+                        class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-500"
+                      >
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="font-semibold text-neutral-900">Location</h4>
+                        <p class="text-gray-600">Bhopal, Madhya Pradesh</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center">
+                      <div
+                        class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-500"
+                      >
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="font-semibold text-neutral-900">Email</h4>
+                        <a
+                          href="mailto:contact@vivekkumar.com"
+                          class="text-purple-500 hover:text-purple-600"
+                          >contact@vivekkumar.com</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="flex items-center">
+                      <div
+                        class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-500"
+                      >
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="font-semibold text-neutral-900">Phone</h4>
+                        <a
+                          href="tel:+919876543210"
+                          class="text-purple-500 hover:text-purple-600"
+                          >+91 98765 43210</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-8">
+                    <h4 class="font-semibold text-neutral-900 mb-4">
+                      Follow Me
+                    </h4>
+                    <div class="flex space-x-4">
+                      <a
+                        href="#"
+                        class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300"
+                      >
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300"
+                      >
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300"
+                      >
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300"
+                      >
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div
+                class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInRight"
+              >
+                <form id="contactForm" class="space-y-6">
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="name"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-colors duration-300"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="email"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-colors duration-300"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="project"
+                      >Project Type</label
+                    >
+                    <select
+                      id="project"
+                      name="project"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-colors duration-300"
+                      required=""
+                    >
+                      <option value="">Select Project Type</option>
+                      <option value="commercial">Commercial Video</option>
+                      <option value="music">Music Video</option>
+                      <option value="social">Social Media Content</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="message"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-colors duration-300"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition-colors duration-300"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            document
+              .getElementById("contactForm")
+              .addEventListener("submit", function (e) {
+                e.preventDefault();
+                // Add your form submission logic here
+                alert(
+                  "Thank you for your message! I will get back to you soon."
+                );
+                this.reset();
+              });
+          </script>
+        </section>
+      </div> </htmlcode
+    ><htmlcode>
+      <div id="root">
+        <footer id="footer" class="bg-neutral-900 text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top Footer Section -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
+              <!-- Brand Section -->
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold">VK</h3>
+                <p class="text-gray-400">
+                  Professional Video Editor &amp; Content Creator based in
+                  Bhopal, bringing your stories to life through compelling
+                  visuals.
+                </p>
+              </div>
+
+              <!-- Quick Links -->
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold">Quick Links</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#hero"
+                      class="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+                      class="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#services"
+                      class="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#portfolio"
+                      class="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      class="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Services -->
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold">Services</h4>
+                <ul class="space-y-2">
+                  <li class="text-gray-400">Video Editing</li>
+                  <li class="text-gray-400">Motion Graphics</li>
+                  <li class="text-gray-400">Color Grading</li>
+                  <li class="text-gray-400">Sound Design</li>
+                  <li class="text-gray-400">Content Creation</li>
+                </ul>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold">Contact Info</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-center text-gray-400">
+                    <i class="fas fa-map-marker-alt mr-2 text-purple-500"></i>
+                    Bhopal, Madhya Pradesh
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:contact@vivekkumar.com"
+                      class="flex items-center text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                    >
+                      <i class="fas fa-envelope mr-2 text-purple-500"></i>
+                      contact@vivekkumar.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="tel:+919876543210"
+                      class="flex items-center text-gray-400 hover:text-purple-500 transition-colors duration-300"
+                    >
+                      <i class="fas fa-phone mr-2 text-purple-500"></i>
+                      +91 98765 43210
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-neutral-800"></div>
+
+            <!-- Bottom Footer -->
+            <div
+              class="py-6 flex flex-col md:flex-row justify-between items-center"
+            >
+              <div class="text-gray-400 text-sm">
+                © 2024 Vivek Kumar. All rights reserved.
+              </div>
+
+              <div class="flex space-x-4 mt-4 md:mt-0">
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-neutral-800 text-gray-400 hover:text-purple-500 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-neutral-800 text-gray-400 hover:text-purple-500 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-neutral-800 text-gray-400 hover:text-purple-500 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-neutral-800 text-gray-400 hover:text-purple-500 rounded-full flex items-center justify-center transition-colors duration-300"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scroll to Top Button -->
+          <button
+            id="scrollToTop"
+            class="fixed bottom-8 right-8 bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-purple-600 transition-colors duration-300"
+          >
+            <i class="fas fa-arrow-up"></i>
+          </button>
+
+          <script>
+            // Scroll to Top functionality
+            const scrollToTopBtn = document.getElementById("scrollToTop");
+
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 300) {
+                scrollToTopBtn.classList.remove("hidden");
+              } else {
+                scrollToTopBtn.classList.add("hidden");
+              }
+            });
+
+            scrollToTopBtn.addEventListener("click", () => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            });
+          </script>
+        </footer>
+      </div> </htmlcode
+    ><svg
+      id="SvgjsSvg1001"
+      width="2"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.dev"
+      style="
+        overflow: hidden;
+        top: -100%;
+        left: -100%;
+        position: absolute;
+        opacity: 0;
+      "
+    >
+      <defs id="SvgjsDefs1002"></defs>
+      <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
+      <path id="SvgjsPath1004" d="M0 0 "></path>
+    </svg>
+    <div id="veepn-breach-alert"></div>
+    <style>
+      @font-face {
+        font-family: FigtreeVF;
+        src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2 supports variations"),
+          url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2-variations");
+        font-weight: 100 1000;
+        font-display: swap;
+      }
+    </style>
+    <div id="veepn-guard-alert"></div>
+    <style>
+      @font-face {
+        font-family: FigtreeVF;
+        src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2 supports variations"),
+          url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+            format("woff2-variations");
+        font-weight: 100 1000;
+        font-display: swap;
+      }
+    </style>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
